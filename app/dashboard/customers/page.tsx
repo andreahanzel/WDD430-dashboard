@@ -1,5 +1,10 @@
-// /app/dashboard/customers/page.tsx
+// app/dashboard/customers/page.tsx
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Customers',
+};
 
 export default function Page() {
-    return <p>Customers Page</p>;
-  }  
+  return <p>Customers Page</p>;
+}

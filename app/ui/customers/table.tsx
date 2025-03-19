@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
 import Search from '@/app/ui/search';
 import {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   CustomersTableType,
   FormattedCustomersTable,
 } from '@/app/lib/definitions';
