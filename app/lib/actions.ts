@@ -65,7 +65,7 @@ export async function createInvoice(prevState: State, formData: FormData) {
       VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
     `;
   } catch (error) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    console.error('Database Error:', error); // FIXED: Use error variable
     return {
       message: 'Database Error: Failed to Create Invoice.',
     };
@@ -103,7 +103,7 @@ export async function updateInvoice(id: string, prevState: State, formData: Form
       WHERE id = ${id}
     `;
   } catch (error) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    console.error('Database Error:', error); // FIXED: Use error variable
     return {
       message: 'Database Error: Failed to Update Invoice.',
     };
